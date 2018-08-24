@@ -1,0 +1,41 @@
+<div fxLayout="row " fxLayoutAlign="center center" fxShow="true" fxHide="false" fxFill="">
+  <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false" fxFlex.gt-md="20" fxFlex.md="30" fxFlex.sm="40" fxFlex.xs="80">
+    <mat-card>
+      <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <mat-card-title>login</mat-card-title>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <form>
+          <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+            <div fxLayout="row " fxLayoutGap="5px" fxLayoutAlign="start center" fxShow="true" fxHide="false">
+              <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxFlex="90" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+                <mat-form-field>
+                  <input matInput="" [(ngModel)]="username" name="username" placeholder="Username" required>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row " fxLayoutGap="5px" fxLayoutAlign="start center" fxShow="true" fxHide="false">
+              <div fxLayout="column wrap" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+                <mat-icon>lock</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+                <mat-form-field>
+                  <input matInput="" [(ngModel)]="password" name="password" type="password" placeholder="Password" required>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+              <mat-checkbox [(ngModel)]="remember" name="remember me" required>Remember me</mat-checkbox>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+              <button mat-raised-button="" color="primary" (click)="submit()">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </mat-card>
+  </div>
+</div>
